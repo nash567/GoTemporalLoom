@@ -1,0 +1,4 @@
+- Context cancel doesnt sends any value to done channel, it only closes the channel, on subsequest calls to cancel function it doesnt panic as closing a already closed channel panics in go but its handled by context package.
+- golang type  assertion works with interface, if you have a interface defined in pkgA which has some method that returns primitive type and there a packageB with some interface and same methods if you want to use packageB interface in place of interfaceA you can do that without type assertion,
+   but if interface has some methods that return another interface then typer assertion is needed.
+
